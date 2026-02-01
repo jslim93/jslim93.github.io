@@ -1,13 +1,29 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: My research spans cloud microphysics, from entrainment and mixing to warm rain initiation and Arctic cloud dynamics.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 2
+display_categories: [research, software]
 horizontal: false
 ---
+
+<style>
+.card-img-container {
+  height: 200px;
+  overflow: hidden;
+}
+.card-img-container img,
+.card-img-container picture img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  min-height: 120px;
+}
+</style>
 
 <!-- pages/projects.md -->
 <div class="projects">

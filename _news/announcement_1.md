@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-01-27 09:00:00-0600
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Oral presentation at the **106th AMS Annual Meeting** in Houston, Texas: "Regimes of Droplet Size Distribution Evolution in Stratocumulus."
