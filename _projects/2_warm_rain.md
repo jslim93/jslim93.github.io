@@ -32,4 +32,4 @@ My research investigates the critical number and size of precipitation embryos r
 
 ### Related Publications
 
-- [Lim, Noh, Lee & Hoffmann (2025)](https://doi.org/10.5194/acp-25-5313-2025): The critical number and size of precipitation embryos to accelerate warm rain initiation. *Atmospheric Chemistry and Physics*
+- [Lim, Noh, Lee & Hoffmann (2025)](https://doi.org/10.5194/acp-25-5313-2025): The critical number and size of precipitation embryos to accelerate warm rain initiation. _Atmospheric Chemistry and Physics_

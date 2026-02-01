@@ -26,6 +26,6 @@ I use high-resolution Lagrangian Cloud Model (LCM) simulations to track individu
 
 ### Related Publications
 
-- [Lim & Hoffmann (2025)](https://doi.org/10.5194/egusphere-2025-6099): Aging of droplet size distribution in stratocumulus clouds. *ACP (in review)*
-- [Lim & Hoffmann (2024)](https://doi.org/10.1029/2023JD040393): Life cycle evolution of mixing in shallow cumulus clouds. *JGR: Atmospheres*
-- [Lim & Hoffmann (2023)](https://doi.org/10.1029/2022JD037900): Between broadening and narrowing: How mixing affects the width of the droplet size distribution. *JGR: Atmospheres*
+- [Lim & Hoffmann (2025)](https://doi.org/10.5194/egusphere-2025-6099): Aging of droplet size distribution in stratocumulus clouds. _ACP (in review)_
+- [Lim & Hoffmann (2024)](https://doi.org/10.1029/2023JD040393): Life cycle evolution of mixing in shallow cumulus clouds. _JGR: Atmospheres_
+- [Lim & Hoffmann (2023)](https://doi.org/10.1029/2022JD037900): Between broadening and narrowing: How mixing affects the width of the droplet size distribution. _JGR: Atmospheres_

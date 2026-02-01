@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Ph.D.** awarded *magna cum laude* from **Ludwig-Maximilians-Universität München**.
+**Ph.D.** awarded _magna cum laude_ from **Ludwig-Maximilians-Universität München**.

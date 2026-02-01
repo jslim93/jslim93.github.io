@@ -26,4 +26,4 @@ At CIRES, I work with Dr. Graham Feingold to investigate Arctic mixed-phase clou
 
 ### Related Publications
 
-- [Zhang, Painemal, Dror, Lim et al. (2025)](https://doi.org/10.5194/egusphere-2025-5119): Inferring processes governing cloud transition during mid-latitude marine cold-air outbreaks from satellite. *ACP (in review)*
+- [Zhang, Painemal, Dror, Lim et al. (2025)](https://doi.org/10.5194/egusphere-2025-5119): Inferring processes governing cloud transition during mid-latitude marine cold-air outbreaks from satellite. _ACP (in review)_
