@@ -20,13 +20,26 @@ profile:
     <p><a href="mailto:jung-sub.lim@noaa.gov">jung-sub.lim@noaa.gov</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # social icons row at the bottom (disabled; hero already links out)
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
 ---
 
-I am a postdoctoral associate at [CIRES](https://cires.colorado.edu/) / NOAA Chemical Sciences Laboratory, working with [Dr. Graham Feingold](https://csl.noaa.gov/staff/graham.feingold/) on Arctic mixed-phase cloud stability using Lagrangian cloud modeling and observations from field campaigns like MOSAiC. My research connects microscale cloud physics — entrainment, mixing, and droplet growth — to cloud–climate interactions. [Explore my research →](/projects/)
+## About Me
+
+I am a postdoctoral associate at CIRES and the NOAA Chemical Sciences Laboratory, where I work with [Dr. Graham Feingold](https://csl.noaa.gov/staff/graham.feingold/) on the stability of Arctic mixed-phase clouds. I use the Lagrangian Cloud Model together with observations from field campaigns such as MOSAiC to understand how clouds respond to a warming Arctic.
+
+My broader research follows individual cloud droplets through turbulent air, connecting the smallest scales of cloud physics to their role in climate. I study how entrainment and mixing shape the cloud droplet size distribution, how giant aerosols trigger warm rain, and how mixed-phase clouds maintain or lose their stability.
+
+## Research Interests
+
+- Entrainment and mixing in warm cumulus and stratocumulus clouds
+- Warm rain initiation and the role of giant aerosols
+- Arctic mixed-phase cloud dynamics and stability
+- Lagrangian cloud modeling across scales, from millimeters to kilometers
