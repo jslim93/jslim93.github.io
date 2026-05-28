@@ -33,13 +33,13 @@ latest_posts:
 
 ## About Me
 
-I am a postdoctoral associate at CIRES and the NOAA Chemical Sciences Laboratory, where I work with [Dr. Graham Feingold](https://csl.noaa.gov/staff/graham.feingold/) on the stability of Arctic mixed-phase clouds. I use the Lagrangian Cloud Model together with observations from field campaigns such as MOSAiC to understand how clouds respond to a warming Arctic.
+I am a postdoctoral associate at CIRES and the NOAA Chemical Sciences Laboratory, working in [Graham Feingold](https://csl.noaa.gov/staff/graham.feingold/)'s group. I am a cloud physicist interested in how the smallest scales of cloud physics shape the behavior of clouds in the climate system.
 
-My broader research follows individual cloud droplets through turbulent air, connecting the smallest scales of cloud physics to their role in climate. I study how entrainment and mixing shape the cloud droplet size distribution, how giant aerosols trigger warm rain, and how mixed-phase clouds maintain or lose their stability.
+My work follows individual cloud droplets and ice crystals through turbulent air, linking the microphysics of single particles to the large-scale processes that determine how clouds form, rain, and respond to a changing climate. I am especially drawn to the Arctic, where the balance between liquid and ice makes clouds both fragile and central to how the region warms.
 
 ## Research Interests
 
-- Entrainment and mixing in warm cumulus and stratocumulus clouds
-- Warm rain initiation and the role of giant aerosols
-- Arctic mixed-phase cloud dynamics and stability
 - Lagrangian cloud modeling across scales, from millimeters to kilometers
+- Entrainment, mixing, and the life cycle of warm clouds
+- Warm rain initiation and the role of giant aerosols
+- Arctic mixed-phase cloud dynamics and climate feedbacks
