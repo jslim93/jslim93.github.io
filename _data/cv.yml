@@ -32,7 +32,7 @@
   type: time_table
   contents:
     - title: Postdoctoral Associate
-      institution: CIRES at University of Colorado Boulder
+      institution: CIRES, University of Colorado Boulder / NOAA Chemical Sciences Laboratory
       year: 2025-Present
       description:
         - "Cloud, Aerosol, and Climate Group (Lead: Dr. Graham Feingold)"
@@ -50,33 +50,68 @@
 - title: Awards & Fellowships
   type: time_table
   contents:
+    - year: Under Review
+      items:
+        - "Co-Investigator, DOE ASR Grant ($941k)"
     - year: 2019-2021
       items:
         - BK21 (Brain Korea 21) Graduate Fellowship, NRF Korea
     - year: 2018
       items:
         - Bronze Prize, Undergraduate Fluid Dynamics Competition, KSME
+    - year: 2014
+      items:
+        - Undergraduate Scholarship, The East
     - year: 2013-2014
       items:
         - Undergraduate Scholarship, Rotary International
+    - year: 2013
+      items:
+        - Undergraduate Scholarship, Shin-heung Youth Association
 
-- title: Teaching Experience
+- title: Invited Talks
   type: time_table
   contents:
-    - title: "TA: Meteorological Instruments Practicum"
-      institution: LMU Munich
-      year: 2022, 2023
-    - title: "TA: Fluid Dynamics"
-      institution: Yonsei University
-      year: 2020
-    - title: "TA: Climate and Civilization"
-      institution: Yonsei University
-      year: 2020
+    - title: "From Particle to Planet: What Cloud Droplets Tell Us About Arctic Climate"
+      institution: Korea Institute of Science and Technology, Seoul
+      year: May 2026
+    - title: "Stochastic Cloud Fluctuations and Arctic Winter Radiative Bistability: Bridging Cloud Microphysics and Climate"
+      institution: Kyungpook National University, Daegu
+      year: May 2026
+    - title: "Evolution of Individual Cloud Droplets: A Lagrangian View of Turbulent Entrainment, Mixing and Droplet Growth Pathways"
+      institution: Ewha Womans University Colloquium, Seoul
+      year: Oct 2025
+    - title: "Scale-Crossing Lagrangian Cloud Modeling: From the Kilometer Scale to the Millimeter Scale"
+      institution: Ewha Womans University Colloquium, Seoul
+      year: Oct 2022
 
-- title: Professional Services
+- title: Teaching Experience
   type: nested_list
   contents:
-    - title: "Peer Review (13 reviews)"
+    - title: Lectures
+      items:
+        - "2026 — Cloud Modelling from a Lagrangian Perspective, Guest Lecturer, Kyungpook National University"
+        - "2024 — Introduction to Scientific Writing, Invited Lecturer, VeKNI"
+        - "2022 — Cloud–Climate Interactions, Invited Speaker, VeKNI"
+    - title: Teaching Assistant
+      items:
+        - "Spring 2023 — Instrumenten-Praktikum (Meteorological Instruments Practicum), LMU"
+        - "Spring 2022 — Instrumenten-Praktikum (Meteorological Instruments Practicum), LMU"
+        - "Fall 2020 — Fluid Dynamics, Yonsei University"
+        - "Spring 2020 — Climate and Civilization, Yonsei University"
+    - title: Mentored Students
+      items:
+        - "Since 2025 — Sanggyeom Kim, Ph.D. Student, Yonsei University, Republic of Korea"
+        - "2023 — Julian Sebastian Humer-Hager, Student Research Assistant, LMU, Germany"
+
+- title: Professional Service
+  type: nested_list
+  contents:
+    - title: Conference Organization
+      items:
+        - "Session Convener — Proposed and organized session 'Bridging Experiments, Observations, and Models to Develop Process-Level Understanding of Mixed-Phase Clouds,' Third Symposium on Cloud Physics, 106th AMS Annual Meeting (2026)"
+        - "Session Chair — 'Mixed-Phase Clouds: Lab Studies, Field Studies and Parameterization,' Third Symposium on Cloud Physics, 106th AMS Annual Meeting (2026)"
+    - title: "Peer Review (15 reviews)"
       items:
         - Quarterly Journal of the Royal Meteorological Society
         - "Journal of Geophysical Research: Atmospheres"
@@ -87,3 +122,41 @@
         - Geophysical Research Letters
         - Journal of Advances in Modeling Earth Systems
         - "GIScience & Remote Sensing"
+        - Weather
+
+- title: Software Development
+  type: list
+  contents:
+    - "<b>PyLCM</b> — Developer and maintainer of an open-source, simplified version of the Lagrangian Cloud Model designed for university lectures and theses. <a href='https://github.com/jslim93/PyLCM_edu'>github.com/jslim93/PyLCM_edu</a>"
+
+- title: Media & Press
+  type: list
+  contents:
+    - "<b>SBS 8 O'Clock News</b> (Aug. 29, 2023) — Featured interview on research regarding cloud–climate interactions. <a href='https://www.youtube.com/watch?v=bbkcWEUPxS0'>Watch on YouTube</a>"
+
+- title: Memberships
+  type: list
+  contents:
+    - "Korean Meteorological Society (since 2020)"
+    - "American Geophysical Union (since 2021)"
+    - "American Meteorological Society (since 2022)"
+    - "The Korean Scientists and Engineers Association in the FRG (VeKNI) (2022–2024)"
+
+- title: Service & Outreach
+  type: time_table
+  contents:
+    - title: Organizing Committee Member, CSL Science Social All-hands
+      institution: NOAA CSL
+      year: 2025-2026
+    - title: Lecturer, Youth Meteorology Career Camp (high school & middle school students)
+      institution: Korea Productivity Center
+      year: 2020-2021
+    - title: "Team Leader, Weather Debate Contest (Finalist, top 8 teams)"
+      institution: Korea Meteorological Administration
+      year: 2019
+    - title: Co-founder / University Representative, Undergraduate Student Society of Atmospheric Sciences
+      institution: Yonsei–SNU–Ewha joint group
+      year: 2018-2019
+    - title: Member / Python Teaching Member, BITAMIN Big Data Study Club
+      institution: Seoul, Korea
+      year: 2018

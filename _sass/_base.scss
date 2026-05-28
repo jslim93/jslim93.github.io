@@ -720,11 +720,64 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
+    color: var(--global-theme-color);
+    border-top: none;
+    padding-top: 0;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  h2.pub-section {
+    color: var(--global-text-color);
+    border-bottom: 2px solid var(--global-theme-color);
+    padding-bottom: 0.3rem;
     margin-top: 2rem;
-    text-align: right;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .numbered-bib {
+    counter-reset: bibitem var(--pub-start);
+
+    ol.bibliography li {
+      counter-increment: bibitem -1;
+      position: relative;
+      padding-left: 2.2em;
+
+      &::before {
+        content: "[" counter(bibitem) "]";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: 600;
+        color: var(--global-text-color-light);
+      }
+    }
+  }
+
+  .starred-bib {
+    ol.bibliography li {
+      position: relative;
+      padding-left: 2.2em;
+
+      .title {
+        display: none;
+      }
+
+      &::before {
+        content: "[*]";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: 600;
+        color: var(--global-text-color-light);
+      }
+    }
   }
 
   ol.bibliography {

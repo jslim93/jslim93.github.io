@@ -48,7 +48,19 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+      {% elsif entry.html %}
+        {% if entry.html contains '://' %}
+          <a href="{{ entry.html }}">{{ entry.title }}</a>
+        {% else %}
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}">{{ entry.title }}</a>
+        {% endif %}
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -78,6 +90,17 @@
           {% endfor %}
         {%- endif -%}
 
+        {%- assign first_name_parts = author.first | replace: "-", " " | split: " " -%}
+        {%- assign first_initials = "" -%}
+        {%- for part in first_name_parts -%}
+          {%- assign letter = part | slice: 0 | upcase -%}
+          {%- if forloop.last -%}
+            {%- assign first_initials = first_initials | append: letter | append: "." -%}
+          {%- else -%}
+            {%- assign first_initials = first_initials | append: letter | append: ". " -%}
+          {%- endif -%}
+        {%- endfor -%}
+
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false -%}
             {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
@@ -86,17 +109,17 @@
         {% endif %}
         {%- if author_is_self -%}
           <em>
-            {{- author.first }}
+            {{- first_initials }}
             {{ author_last_html -}}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
-              {{- author.first }}
+              {{- first_initials }}
               {{ author_last_html -}}
             </a>
           {%- else -%}
-            {{- author.first }}
+            {{- first_initials }}
             {{ author_last_html -}}
           {% endif %}
         {%- endif -%}
@@ -110,7 +133,17 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {%- assign more_first_parts = author.first | replace: "-", " " | split: " " -%}
+          {%- assign more_first_initials = "" -%}
+          {%- for part in more_first_parts -%}
+            {%- assign letter = part | slice: 0 | upcase -%}
+            {%- if forloop.last -%}
+              {%- assign more_first_initials = more_first_initials | append: letter | append: "." -%}
+            {%- else -%}
+              {%- assign more_first_initials = more_first_initials | append: letter | append: ". " -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {% assign more_authors_show = more_authors_show | append: more_first_initials | append: ' ' | append: author.last %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}
@@ -192,24 +225,8 @@
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
-      {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
-      {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-      {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      {% endif %}
-      {% if entry.html %}
-        {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-        {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-        {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
