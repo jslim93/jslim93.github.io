@@ -1576,14 +1576,21 @@ figure.cover {
   }
 
   .hero-photo {
-    flex: 0.55;
-    text-align: center;
+    flex: 0 0 auto;
+    width: 185px;
+    height: 215px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(43, 143, 214, 0.22);
+    align-self: center;
 
     img {
-      width: 150px;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 6px 18px rgba(43, 143, 214, 0.22);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 16%;
+      transform: scale(1.35);
+      transform-origin: 50% 22%;
     }
   }
 
