@@ -1586,6 +1586,17 @@ figure.cover {
       box-shadow: 0 6px 18px rgba(43, 143, 214, 0.22);
     }
   }
+
+  .hero-credit {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.3rem;
+    z-index: 1;
+    font-size: 0.62rem;
+    letter-spacing: 0.02em;
+    color: var(--global-text-color-light);
+    opacity: 0.85;
+  }
 }
 
 @media (max-width: 576px) {
