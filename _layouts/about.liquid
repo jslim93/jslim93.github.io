@@ -2,38 +2,36 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-      {{ site.last_name }}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+  <section class="home-hero">
+    <div class="hero-bg">
+      {% if page.hero_image %}
+        <img src="{{ page.hero_image | prepend: 'assets/img/' | relative_url }}" alt="">
+      {% endif %}
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-eyebrow">{{ page.hero_eyebrow }}</h1>
+        <div class="hero-headline">{{ page.hero_headline }}</div>
+        <div class="hero-rule"></div>
+        <p class="hero-tagline">{{ page.hero_tagline }}</p>
+        <div class="hero-links">
+          <a class="btn-primary-link" href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a href="{{ '/cv/' | relative_url }}">CV</a> ·
+          <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener">Scholar</a> ·
+          <a href="https://orcid.org/{{ site.data.socials.orcid_id }}" target="_blank" rel="noopener">ORCID</a> ·
+          <a href="mailto:{{ site.data.socials.email }}">Email</a>
+        </div>
+      </div>
+      {% if page.profile and page.profile.image %}
+        <div class="hero-photo">
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="150px" alt=page.profile.image cache_bust=true %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
 
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
-
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
