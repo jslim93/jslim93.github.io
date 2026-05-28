@@ -9,7 +9,7 @@ subtitle: Postdoctoral Associate at <a href='https://cires.colorado.edu/'>CIRES<
 hero_eyebrow: Jung-Sub Lim · Atmospheric Physicist, CIRES / NOAA
 hero_headline: From cloud droplets to Arctic climate
 hero_tagline: Cloud microphysics, turbulent mixing, and what tiny droplets tell us about a warming Arctic.
-hero_image: clouds_hero.jpg # NASA Worldview, MODIS/Terra Corrected Reflectance (True Color), Arctic, 2023-07-04. Source: NASA EOSDIS Worldview (public domain). Credit shown in hero.
+hero_image: # leave blank for a clean gradient hero; set to a filename in assets/img/ to use a background image (credit will show in hero)
 
 profile:
   align: right
