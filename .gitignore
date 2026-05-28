@@ -13,3 +13,6 @@ vendor
 .idea
 # Private CV source files
 jslim_CV/
+CV_inbox/
+# Brainstorming visual companion artifacts
+.superpowers/
