@@ -23,12 +23,14 @@ Faculty search committees, collaborating researchers, and fellowship reviewers. 
 **Strategic de-templatization on al-folio.** Keep al-folio's structure and content machinery (BibTeX bibliography, `cv.yml`, projects collection, news). Change only: color palette, typography, and the homepage hero/structure.
 
 ### In scope
+
 1. **Site-wide blue palette** replacing the default purple (and current cyan dark accent), applied across home, Publications, CV, Projects, nav, links, accents.
 2. **Homepage hero redesign** — minimal split hero with a research headline, small profile photo, and a faint cloud background.
 3. **Homepage simplification** — remove Selected Publications, News, and any research-card strip from the homepage; those live on their nav pages.
 4. **Refined serif headline font** (Newsreader) for the hero headline and section headers.
 
 ### Out of scope (YAGNI)
+
 - Authoring/expanding research/project page content (pages exist; not part of this work).
 - Blog, new template, or platform migration.
 - Changes to publication/CV **data** (already completed in prior commit `481af3d`).
@@ -36,18 +38,20 @@ Faculty search committees, collaborating researchers, and fellowship reviewers. 
 ## Design System
 
 ### Palette — "Airy Sky" (B3)
-| Token | Light | Dark |
-|---|---|---|
-| Background | `#ffffff` | `#1c1c1d` (al-folio default) |
-| Hero tint / section bg | `#f4f9fd` | subtle dark blue-grey |
-| Ink / headline | `#0f1f3d` (deep navy) | `#e8e8e8` |
-| Body text | `#46566b` / muted `#7c8aa0` | existing light grey |
-| **Accent (theme color)** | `#2b8fd6` (sky blue) | `#4aa8e0` (brighter sky for dark bg) |
-| Accent hover | `#1f6fb0` | `#2b8fd6` |
+
+| Token                    | Light                       | Dark                                 |
+| ------------------------ | --------------------------- | ------------------------------------ |
+| Background               | `#ffffff`                   | `#1c1c1d` (al-folio default)         |
+| Hero tint / section bg   | `#f4f9fd`                   | subtle dark blue-grey                |
+| Ink / headline           | `#0f1f3d` (deep navy)       | `#e8e8e8`                            |
+| Body text                | `#46566b` / muted `#7c8aa0` | existing light grey                  |
+| **Accent (theme color)** | `#2b8fd6` (sky blue)        | `#4aa8e0` (brighter sky for dark bg) |
+| Accent hover             | `#1f6fb0`                   | `#2b8fd6`                            |
 
 Implementation: add `$sky-blue-color: #2b8fd6` (and a darker hover variant) to `_sass/_variables.scss`; point `--global-theme-color` and `--global-hover-color` to it in `_sass/_themes.scss` for both light and dark themes. Update `$code-bg-color-light` if it still reads purple.
 
 ### Typography
+
 - **Headline serif:** Newsreader (Google Font), weights ~500–700. Used for the hero headline and section headers (`h1`/`h2` on content pages). Added to the existing Google Fonts URL in `_config.yml` (line ~438), alongside the current Roboto / Roboto Slab.
 - **Body / nav / labels:** keep al-folio's Roboto (sans). No change.
 
@@ -56,6 +60,7 @@ Implementation: add `$sky-blue-color: #2b8fd6` (and a darker hover variant) to `
 The homepage becomes essentially **one screen**: hero + a 3-sentence About + social footer.
 
 ### Hero (split layout)
+
 ```
 [ nav: "Jung-Sub Lim"  ........  About · Research · Publications · CV ]
 
@@ -77,15 +82,18 @@ The homepage becomes essentially **one screen**: hero + a 3-sentence About + soc
 - **Name in DOM:** the name appears in an `<h1>` (visually the eyebrow line) so SEO/accessibility keep a clear page identity; the research headline is the dominant visual element.
 
 ### Below the hero
+
 - **Short About:** ~3 sentences (current second paragraph, condensed) ending with a `Research →` link.
 - **Social footer:** existing social icons (email, Scholar, ORCID, GitHub, ResearchGate) + copyright.
 
 ### Removed from homepage
+
 - Selected Publications block (`selected_papers: false`) — Publications page covers this.
 - News list (`announcements.enabled: false`) — News page covers this.
 - Any research-card strip (not added).
 
 ## Files Affected
+
 1. `_sass/_variables.scss` — add sky-blue tokens.
 2. `_sass/_themes.scss` — repoint theme/hover color (light + dark); fix code-bg if purple.
 3. `_config.yml` — add Newsreader to the Google Fonts URL.
@@ -95,6 +103,7 @@ The homepage becomes essentially **one screen**: hero + a 3-sentence About + soc
 7. `assets/img/` — add chosen licensed cloud background image.
 
 ## Verification
+
 - `bundle exec jekyll build` succeeds with no new errors (SCSS deprecation warnings pre-exist).
 - **Light and dark mode** both render the blue accent (no leftover purple/cyan); toggle and confirm.
 - **Responsive:** hero stacks cleanly on mobile (<576px) — text above, photo below; tagline and links wrap correctly.
@@ -103,6 +112,7 @@ The homepage becomes essentially **one screen**: hero + a 3-sentence About + soc
 - Name present in the rendered DOM for SEO.
 
 ## Open Items (locked to recommendations; change at spec review if desired)
+
 - **Scope = site-wide** recolor (recommended for a cohesive de-templatized look).
 - **Headline font = Newsreader** (more refined than system Georgia).
 - **Cloud background image** = to be chosen from 2–3 licensed candidates during implementation.

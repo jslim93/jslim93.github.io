@@ -15,6 +15,7 @@
 ### Task 1: Add blue palette tokens
 
 **Files:**
+
 - Modify: `_sass/_variables.scss` (color definitions block, around lines 9–22)
 
 - [ ] **Step 1: Add sky-blue tokens after the purple definitions**
@@ -52,6 +53,7 @@ git commit -m "Add sky-blue palette tokens"
 ### Task 2: Repoint theme color to blue (light + dark)
 
 **Files:**
+
 - Modify: `_sass/_themes.scss:13-14` (light theme), and the dark theme block (around lines 85–86)
 
 - [ ] **Step 1: Recolor the light theme**
@@ -59,15 +61,15 @@ git commit -m "Add sky-blue palette tokens"
 Replace (lines 13–14):
 
 ```scss
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+--global-theme-color: #{$purple-color};
+--global-hover-color: #{$purple-color};
 ```
 
 with:
 
 ```scss
-  --global-theme-color: #{$sky-blue-color};
-  --global-hover-color: #{$sky-blue-dark-color};
+--global-theme-color: #{$sky-blue-color};
+--global-hover-color: #{$sky-blue-dark-color};
 ```
 
 - [ ] **Step 2: Recolor the dark theme**
@@ -75,24 +77,26 @@ with:
 Find the dark theme block (around lines 85–86):
 
 ```scss
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+--global-theme-color: #{$cyan-color};
+--global-hover-color: #{$cyan-color};
 ```
 
 Replace with:
 
 ```scss
-  --global-theme-color: #{$sky-blue-bright-color};
-  --global-hover-color: #{$sky-blue-bright-color};
+--global-theme-color: #{$sky-blue-bright-color};
+--global-hover-color: #{$sky-blue-bright-color};
 ```
 
 - [ ] **Step 3: Build, then verify the compiled CSS uses the blue and no longer the purple theme color**
 
 Run:
+
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll build 2>&1 | grep -iE "error|liquid exception" | grep -vi deprecation
 grep -o "global-theme-color: #2b8fd6" _site/assets/css/main.css | head -1
 ```
+
 Expected: first command empty; second prints `global-theme-color: #2b8fd6`.
 
 - [ ] **Step 4: Commit**
@@ -107,6 +111,7 @@ git commit -m "Switch site theme color from purple to sky blue"
 ### Task 3: Load the Newsreader serif font
 
 **Files:**
+
 - Modify: `_config.yml:438`
 
 - [ ] **Step 1: Add Newsreader to the Google Fonts URL**
@@ -114,22 +119,24 @@ git commit -m "Switch site theme color from purple to sky blue"
 Replace line 438:
 
 ```yaml
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
 ```
 
 with:
 
 ```yaml
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Newsreader:400,500,600,700|Material+Icons&display=swap"
+fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Newsreader:400,500,600,700|Material+Icons&display=swap"
 ```
 
 - [ ] **Step 2: Build and verify the font URL is in the rendered <head>**
 
 Run (config changes need a fresh build, not incremental regen):
+
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll build 2>&1 | grep -iE "error|liquid exception" | grep -vi deprecation
 grep -c "Newsreader" _site/index.html
 ```
+
 Expected: first empty; second prints a number ≥ 1.
 
 - [ ] **Step 3: Commit**
@@ -144,6 +151,7 @@ git commit -m "Load Newsreader serif font for headlines"
 ### Task 4: Add hero + serif-headline styles
 
 **Files:**
+
 - Modify: `_sass/_base.scss` (append at end of file)
 
 - [ ] **Step 1: Append the hero styles**
@@ -302,10 +310,12 @@ html[data-theme="dark"] .home-hero {
 - [ ] **Step 2: Build and verify the hero CSS compiled**
 
 Run:
+
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll build 2>&1 | grep -iE "error|liquid exception" | grep -vi deprecation
 grep -c "home-hero" _site/assets/css/main.css
 ```
+
 Expected: first empty; second ≥ 1.
 
 - [ ] **Step 3: Commit**
@@ -320,6 +330,7 @@ git commit -m "Add homepage hero styles and serif headlines"
 ### Task 5: Restructure the homepage layout into the hero
 
 **Files:**
+
 - Modify: `_layouts/about.liquid` (replace the `<header class="post-header">` block and the in-article profile float)
 
 - [ ] **Step 1: Replace the header + profile block with the hero**
@@ -405,10 +416,12 @@ Note: leave the rest of the file (News, Latest posts, Selected papers, Social bl
 - [ ] **Step 2: Build and verify the hero renders on the homepage**
 
 Run:
+
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll build 2>&1 | grep -iE "error|liquid exception" | grep -vi deprecation
 grep -c "home-hero" _site/index.html
 ```
+
 Expected: first empty; second ≥ 1.
 
 - [ ] **Step 3: Commit**
@@ -423,6 +436,7 @@ git commit -m "Restructure homepage into minimal split hero"
 ### Task 6: Homepage front matter + condensed About body
 
 **Files:**
+
 - Modify: `_pages/about.md`
 
 - [ ] **Step 1: Update front matter and body**
@@ -467,12 +481,14 @@ I am a postdoctoral associate at [CIRES](https://cires.colorado.edu/) / NOAA Che
 - [ ] **Step 2: Build and verify homepage simplifications**
 
 Run:
+
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll build 2>&1 | grep -iE "error|liquid exception" | grep -vi deprecation
 echo "hero headline present:"; grep -c "From cloud droplets to Arctic climate" _site/index.html
 echo "selected pubs removed (expect 0):"; grep -c "Selected Publications" _site/index.html
 echo "news removed (expect 0):"; grep -c "bibliography\|announcement" _site/index.html
 ```
+
 Expected: first empty; headline count ≥ 1; "Selected Publications" = 0; news/announcement = 0.
 
 - [ ] **Step 3: Commit**
@@ -487,6 +503,7 @@ git commit -m "Simplify homepage: hero fields, drop selected-pubs and news"
 ### Task 7: (Optional enhancement) Add cloud hero background image
 
 **Files:**
+
 - Create: `assets/img/clouds_hero.jpg` (a CC0/licensed cloud image)
 - Modify: `_pages/about.md` (set `hero_image: clouds_hero.jpg`)
 
@@ -507,10 +524,12 @@ hero_image: clouds_hero.jpg
 - [ ] **Step 3: Build and verify the image is referenced in the hero**
 
 Run:
+
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll build 2>&1 | grep -iE "error|liquid exception" | grep -vi deprecation
 grep -o "clouds_hero" _site/index.html | head -1
 ```
+
 Expected: first empty; second prints `clouds_hero`.
 
 - [ ] **Step 4: Commit**
@@ -533,6 +552,7 @@ Run: `export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle exec jekyll serve
 - [ ] **Step 2: Verify each item in a browser at http://localhost:4000**
 
 Confirm and check off:
+
 - Homepage hero: eyebrow (blue), serif headline, rule, tagline, Publications button + links, small photo on the right, faint cloud/gradient background; text fully legible.
 - Toggle **dark mode**: accent is blue (not purple/cyan), hero background and headline adapt, text legible.
 - **Responsive** (narrow the window < 576px): hero stacks (photo above text), nothing overflows, links wrap.
@@ -546,6 +566,7 @@ Confirm and check off:
 ## Self-Review
 
 **Spec coverage:**
+
 - Site-wide blue palette → Tasks 1, 2 ✓
 - Newsreader serif headlines → Tasks 3, 4 ✓
 - Minimal split hero (headline + small photo + faint cloud bg) → Tasks 4, 5, 7 ✓

@@ -90,14 +90,14 @@
           {% endfor %}
         {%- endif -%}
 
-        {%- assign first_name_parts = author.first | replace: "-", " " | split: " " -%}
-        {%- assign first_initials = "" -%}
+        {%- assign first_name_parts = author.first | replace: '-', ' ' | split: ' ' -%}
+        {%- assign first_initials = '' -%}
         {%- for part in first_name_parts -%}
           {%- assign letter = part | slice: 0 | upcase -%}
           {%- if forloop.last -%}
-            {%- assign first_initials = first_initials | append: letter | append: "." -%}
+            {%- assign first_initials = first_initials | append: letter | append: '.' -%}
           {%- else -%}
-            {%- assign first_initials = first_initials | append: letter | append: ". " -%}
+            {%- assign first_initials = first_initials | append: letter | append: '. ' -%}
           {%- endif -%}
         {%- endfor -%}
 
@@ -133,14 +133,14 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {%- assign more_first_parts = author.first | replace: "-", " " | split: " " -%}
-          {%- assign more_first_initials = "" -%}
+          {%- assign more_first_parts = author.first | replace: '-', ' ' | split: ' ' -%}
+          {%- assign more_first_initials = '' -%}
           {%- for part in more_first_parts -%}
             {%- assign letter = part | slice: 0 | upcase -%}
             {%- if forloop.last -%}
-              {%- assign more_first_initials = more_first_initials | append: letter | append: "." -%}
+              {%- assign more_first_initials = more_first_initials | append: letter | append: '.' -%}
             {%- else -%}
-              {%- assign more_first_initials = more_first_initials | append: letter | append: ". " -%}
+              {%- assign more_first_initials = more_first_initials | append: letter | append: '. ' -%}
             {%- endif -%}
           {%- endfor -%}
           {% assign more_authors_show = more_authors_show | append: more_first_initials | append: ' ' | append: author.last %}
