@@ -8,6 +8,36 @@
     - name: Languages
       value: Korean (native), English (fluent), German (intermediate)
 
+- title: Research Profile
+  type: list
+  contents:
+    - "Atmospheric physicist studying how droplets and ice crystals shape cloud evolution, precipitation, radiation, and climate. Combines Lagrangian cloud modeling, large-eddy simulation, stochastic dynamics, observational constraints, and scientific software across warm and mixed-phase cloud systems."
+
+- title: Current Research Directions
+  type: list
+  contents:
+    - "<b>Particle histories and cloud evolution.</b> How do growth, mixing, collision, and transport shape cloud particles over their lifetimes?"
+    - "<b>Cloud transitions and climate.</b> How do microphysics and variability govern whether clouds produce precipitation, change phase, persist, or dissipate?"
+    - "<b>Model development and evaluation.</b> How can observational constraints and particle-based models connect microscopic processes with cloud evolution and climate-relevant effects?"
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Postdoctoral Associate
+      institution: CIRES, University of Colorado Boulder / NOAA Chemical Sciences Laboratory
+      year: 2025-Present
+      description:
+        - "Research program: Arctic cloud variability, mixed-phase microphysics, and particle-based model development"
+    - title: Research Associate
+      institution: Meteorological Institute Munich / LMU
+      year: 2021-2024
+    - title: Research Associate
+      institution: Geophysical Fluid Dynamics Lab., Yonsei University
+      year: 2019-2021
+    - title: Research Internship
+      institution: Computational Science and Engineering, Yonsei University
+      year: 2018
+
 - title: Education
   type: time_table
   contents:
@@ -28,31 +58,18 @@
       institution: Yonsei University, Seoul, Republic of Korea
       year: 2019
 
-- title: Professional Experience
+- title: Research Funding
   type: time_table
   contents:
-    - title: Postdoctoral Associate
-      institution: CIRES, University of Colorado Boulder / NOAA Chemical Sciences Laboratory
-      year: 2025-Present
+    - title: "Causal Understanding of the Transition between Radiatively Clear and Opaque Arctic States"
+      institution: DOE BER / Atmospheric System Research
+      year: Pending
       description:
-        - "Cloud, Aerosol, and Climate Group (Lead: Dr. Graham Feingold)"
-        - "Research Focus: Arctic mixed-phase cloud stability using Lagrangian Cloud Model and MOSAiC observations"
-    - title: Research Associate
-      institution: Meteorological Institute Munich / LMU
-      year: 2021-2024
-    - title: Research Associate
-      institution: Geophysical Fluid Dynamics Lab., Yonsei University
-      year: 2019-2021
-    - title: Research Internship
-      institution: Computational Science and Engineering, Yonsei University
-      year: 2018
+        - "Co-Investigator; $941k proposal"
 
 - title: Awards & Fellowships
   type: time_table
   contents:
-    - year: Under Review
-      items:
-        - "Co-Investigator, DOE ASR Grant ($941k)"
     - year: 2019-2021
       items:
         - BK21 (Brain Korea 21) Graduate Fellowship, NRF Korea
@@ -85,6 +102,73 @@
       institution: Ewha Womans University Colloquium, Seoul
       year: Oct 2022
 
+- title: Contributed Presentations
+  type: time_table
+  contents:
+    - title: "Cloud-Driven Stochastic Variability Sustains Radiative Bimodality in the Arctic Winter"
+      institution: GML 53rd Global Monitoring Annual Conference, Boulder, Colorado — Poster
+      year: 2026
+    - title: "Regimes of Droplet Size Distribution Evolution in Stratocumulus: From Adiabatic Growth to Entrainment–Descent"
+      institution: Third Symposium on Cloud Physics, 106th AMS Annual Meeting, Houston — Oral
+      year: 2026
+    - title: "Modeling Inhomogeneous and Homogeneous Mixing Traits in Marine Stratocumulus Clouds: Effects of CTEI and Radiative Cooling"
+      institution: Third Symposium on Cloud Physics, 106th AMS Annual Meeting, Houston — Presentation
+      year: 2026
+    - title: "Marine Cloud Brightening: Constraining Small-Scale Uncertainty"
+      institution: ICNAA, Vienna — Contributing author
+      year: 2025
+    - title: "Cold Pool Analysis from the Cold Pool Model Intercomparison Project (CP-MIP)"
+      institution: 105th AMS Annual Meeting, New Orleans — Contributing author
+      year: 2025
+    - title: "Regimes of Droplet Size Distribution Evolution in Stratocumulus: From Adiabatic Growth to Entrainment and Mixing"
+      institution: EGU General Assembly, Vienna — Poster
+      year: 2025
+    - title: "Aging of DSD in Stratocumulus: The Role of Adiabatic Growth and Entrainment-Mixing"
+      institution: Workshop on Cloud Across Scales, Zugspitze — Oral
+      year: 2025
+    - title: "Life Cycle Evolution of Inhomogeneous Mixing in Shallow Cumulus Clouds"
+      institution: ICCP, Jeju — Oral
+      year: 2024
+    - title: "Case D: Precipitating Cumulus Congestus Cloud with SAM-LCM"
+      institution: ICMW, Seoul — Oral
+      year: 2024
+    - title: "Environmental and Lifecycle Effects on Entrainment and Mixing in Maritime Shallow Cumulus Cloud"
+      institution: ACPC, London — Oral
+      year: 2024
+    - title: "The Evolution from Homogeneous to Inhomogeneous Mixing During Cloud Lifecycle"
+      institution: AGU Fall Meeting, San Francisco — Poster
+      year: 2023
+    - title: "Scale-Crossing Lagrangian Cloud Modeling to Understand the Role of Clouds in Climate"
+      institution: VeKNI Fall Meeting, Essen — Oral
+      year: 2023
+    - title: "Effect of Anthropogenic Aerosols on Cloud Lifecycle"
+      institution: Europe–Korea Conference on Science and Technology, Munich — Oral
+      year: 2023
+    - title: "Between Broadening and Narrowing: How Mixing Affects the Width of the Droplet Size Distribution"
+      institution: CFMIP–GASS Meeting, Paris — Poster
+      year: 2023
+    - title: "Effects of Entrainment and Mixing Scenarios on the Droplet Size Distribution: Spatiotemporal Variability and Cloud-Lifecycle Dependence"
+      institution: AGU Fall Meeting, Chicago — Poster
+      year: 2022
+    - title: "The Present and Future of Lagrangian Cloud Modeling: From the Centimeter to Kilometer Scale"
+      institution: EMS Annual Meeting, Bonn — Oral
+      year: 2022
+    - title: "Entrainment and Mixing in Cumulus Clouds: A New Mixing Scenario That Narrows the Width of the Droplet Size Distribution"
+      institution: 16th AMS Conference on Cloud Physics, Madison — Oral
+      year: 2022
+    - title: "The Effects of Giant Aerosols in Clouds and Their Possible Role in Geoengineering"
+      institution: Europe–Korea Conference on Science and Technology, Marseille — Poster
+      year: 2022
+    - title: "Idealized Lagrangian Cloud Model Approach to Investigate Early Collisional Growth of Cloud Droplet: Effect of Giant Aerosol and Turbulence"
+      institution: AGU Fall Meeting — Poster
+      year: 2021
+    - title: "Impact of GCCN and TICE on the Formation of Precipitation and Lucky Droplets Using an LCM Ensemble Model"
+      institution: Korean Meteorological Society Fall Meeting — Oral
+      year: 2020
+    - title: "Optimal Ventilation Efficiency Analysis in Various Circular Building Structures Using Immersed Boundary Methods"
+      institution: Korean Society of Mechanical Engineering Spring Annual Conference, Jeongseon — Oral
+      year: 2018
+
 - title: Teaching Experience
   type: nested_list
   contents:
@@ -109,6 +193,7 @@
   contents:
     - title: Conference Organization
       items:
+        - "Lead Convener and Chair — 'Mixed-Phase Clouds: Bridging Observations, Laboratory Studies, Modeling, and Theory,' Fourth Symposium on Cloud Physics, 107th AMS Annual Meeting (accepted; 2027)"
         - "Session Convener — Proposed and organized session 'Bridging Experiments, Observations, and Models to Develop Process-Level Understanding of Mixed-Phase Clouds,' Third Symposium on Cloud Physics, 106th AMS Annual Meeting (2026)"
         - "Session Chair — 'Mixed-Phase Clouds: Lab Studies, Field Studies and Parameterization,' Third Symposium on Cloud Physics, 106th AMS Annual Meeting (2026)"
     - title: "Peer Review (15 reviews)"
@@ -127,7 +212,8 @@
 - title: Software Development
   type: list
   contents:
-    - "<b>PyLCM</b> — Developer and maintainer of an open-source, simplified version of the Lagrangian Cloud Model designed for university lectures and theses. <a href='https://github.com/jslim93/PyLCM_edu'>github.com/jslim93/PyLCM_edu</a>"
+    - "<b>DropLab</b> — Creator and maintainer of an open-source Lagrangian cloud laboratory spanning warm-rain parcels, idealized 2-D warm and mixed-phase clouds, deep convection, and climate-intervention demonstrations. <a href='https://github.com/jslim93/DropLab'>github.com/jslim93/DropLab</a>"
+    - "<b>GPU-accelerated particle-based microphysics in LES</b> — Developing GPU-accelerated particle-based microphysics for the Lagrangian Cloud Model (LCM), coupled to the <a href='http://rossby.msrc.sunysb.edu/SAM.html'>System for Atmospheric Modeling (SAM)</a>, using OpenACC on NVIDIA H100 GPUs together with a physics-validation workflow. Current end-to-end benchmarks span roughly 7–30× across cases and scales; performance characterization and statistical validation are ongoing."
 
 - title: Media & Press
   type: list

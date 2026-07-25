@@ -1,35 +1,48 @@
 ---
 layout: page
 title: Warm Rain Initiation
-description: Role of giant aerosols and precipitation embryos
-img: Media/hC3.gif
-importance: 2
+description: How precipitation embryos help clouds cross the size gap to rain
+summary: >
+  Warm clouds can produce rain rapidly even though condensational growth alone cannot efficiently grow
+  ordinary cloud droplets to collision-ready sizes.
+img: Media/hC3.webp
+importance: 4
 category: research
 related_publications: true
 ---
 
-Warm rain formation in shallow clouds remains one of the outstanding puzzles in cloud physics. The collision-coalescence process that produces rain is inefficient for small droplets, yet warm clouds produce rain faster than simple theory predicts.
+<div class="research-detail" markdown="1">
 
-### The Size Gap Problem
+### Why is warm rain difficult to initiate?
 
-Cloud droplets typically grow to about 10-15 micrometers through condensation. However, the collision-coalescence process only becomes efficient for drops larger than ~40 micrometers. This "size gap" poses a challenge for understanding how rain forms.
+Condensation typically grows droplets to only 10–15 micrometers, while collision–coalescence becomes
+efficient closer to 40 micrometers. This size gap is a central obstacle to explaining rapid rain onset.
 
-### Giant Aerosols as Precipitation Embryos
+</div>
 
-Giant cloud condensation nuclei (GCCN) and ultra-giant aerosols can serve as precipitation embryos by:
+<div class="research-detail" markdown="1">
 
-- Activating into larger-than-average droplets
-- Bridging the size gap more quickly
-- Initiating the collision-coalescence cascade
+### Can giant aerosols bridge the size gap?
 
-### Research Findings
+Giant and ultra-giant aerosol particles can activate into unusually large droplets that act as
+precipitation embryos, begin colliding earlier, and accelerate the coalescence cascade.
 
-My research investigates the critical number and size of precipitation embryos required to accelerate warm rain initiation. Using Lagrangian cloud model simulations, I have quantified:
+</div>
 
-- The threshold concentration of GCCN needed for early rain onset
-- The role of turbulence in enhancing collision rates
-- The interplay between aerosol properties and cloud dynamics
+<div class="research-detail" markdown="1">
 
-### Related Publications
+### What controls the acceleration of rain formation?
+
+Using Lagrangian cloud simulations, I quantify the number and size of precipitation embryos required
+for earlier rain and examine how their effects interact with turbulence and the surrounding droplet
+population.
+
+</div>
+
+<div class="research-detail" markdown="1">
+
+### Selected publication
 
 - [Lim, Noh, Lee & Hoffmann (2025)](https://doi.org/10.5194/acp-25-5313-2025): The critical number and size of precipitation embryos to accelerate warm rain initiation. _Atmospheric Chemistry and Physics_
+
+</div>

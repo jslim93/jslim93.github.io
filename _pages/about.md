@@ -4,42 +4,75 @@ title: About
 permalink: /
 nav: false
 nav_order: 1
-subtitle: Postdoctoral Associate at <a href='https://cires.colorado.edu/'>CIRES</a>, University of Colorado Boulder / <a href='https://csl.noaa.gov/'>NOAA Chemical Sciences Laboratory</a>
+home_wide: true
+subtitle: Atmospheric physicist at <a href='https://cires.colorado.edu/'>CIRES</a>, University of Colorado Boulder / <a href='https://csl.noaa.gov/'>NOAA Chemical Sciences Laboratory</a>
 
-hero_eyebrow: Jung-Sub Lim · Atmospheric Physicist, CIRES / NOAA
-hero_headline: From cloud droplets to Arctic climate
-hero_tagline: Cloud microphysics, turbulent mixing, and what tiny droplets tell us about a warming Arctic.
-hero_image: # leave blank for a clean gradient hero; set to a filename in assets/img/ to use a background image (credit will show in hero)
+hero_eyebrow: Jung-Sub Lim · Atmospheric Physicist
+hero_headline: Cloud physics from particles to climate
+hero_tagline: I study how particle-scale cloud processes shape precipitation, radiation, and climate using stochastic dynamics and particle-based cloud modeling.
+hero_image:
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p>Contact me at</p>
     <p><a href="mailto:jung-sub.lim@noaa.gov">jung-sub.lim@noaa.gov</a></p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # social icons row at the bottom (disabled; hero already links out)
+selected_papers: false
+social: false
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: # blank = show all news in the scrollable feed
+  enabled: true
+  scrollable: true
+  limit:
 
 latest_posts:
   enabled: false
 ---
 
-## About Me
+<section class="research-program" aria-labelledby="research-program-title">
+  <div class="research-program-heading">
+    <p class="section-kicker">About my research</p>
+    <h2 id="research-program-title">Linking cloud microphysics to climate</h2>
+  </div>
+  <div class="research-program-copy">
+    <p>
+      I am Jung-Sub Lim, an atmospheric physicist at
+      <a href="https://cires.colorado.edu/" target="_blank" rel="noopener">CIRES</a> and
+      <a href="https://csl.noaa.gov/" target="_blank" rel="noopener">NOAA’s Chemical Sciences Laboratory</a>.
+      I combine stochastic dynamics, particle-based microphysics, and large-eddy simulation to identify
+      the mechanisms that connect the histories of droplets and ice crystals to cloud evolution,
+      precipitation, and radiation.
+    </p>
+    <p>
+      My work focuses on how particle-scale cloud physics scales up to influence precipitation,
+      radiation, and climate. I also develop the models and computational tools needed to test those
+      connections directly.
+    </p>
+  </div>
+</section>
 
-I am a postdoctoral associate at CIRES and the NOAA Chemical Sciences Laboratory, working in [Graham Feingold](https://csl.noaa.gov/staff/graham.feingold/)'s group. I am a cloud physicist interested in how the smallest scales of cloud physics shape the behavior of clouds in the climate system.
-
-My work follows individual cloud droplets and ice crystals through turbulent air, linking the microphysics of single particles to the large-scale processes that determine how clouds form, rain, and respond to a changing climate. I am especially drawn to the Arctic, where the balance between liquid and ice makes clouds both fragile and central to how the region warms.
-
-## Research Interests
-
-- Lagrangian cloud modeling across scales, from millimeters to kilometers
-- Entrainment, mixing, and the life cycle of warm clouds
-- Warm rain initiation and the role of giant aerosols
-- Arctic mixed-phase cloud dynamics and climate feedbacks
+<section class="droplab-feature" aria-labelledby="droplab-title">
+  <div class="droplab-copy">
+    <p class="section-kicker">Featured software · DropLab</p>
+    <h2 id="droplab-title">Check out my open-source cloud laboratory</h2>
+    <p>
+      DropLab turns particle-based cloud physics into simulations that students and researchers can run,
+      inspect, and modify on a laptop.
+    </p>
+    <p class="droplab-range">
+      Explore aerosol activation, warm rain, mixed-phase glaciation, deep convection, and idealized
+      climate-intervention experiments from the histories of individual super-droplets.
+    </p>
+    <div class="feature-actions">
+      <a class="feature-primary" href="{{ '/droplab/' | relative_url }}">Explore DropLab</a>
+      <a class="feature-secondary" href="https://github.com/jslim93/DropLab" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </div>
+  <figure class="droplab-visual">
+    <img src="{{ '/assets/img/droplab_app.png' | relative_url }}" alt="DropLab browser sandbox with parcel, 2-D cloud, climate, and lecture modes">
+    <figcaption>One laboratory, four modes: Parcel · 2-D Cloud · Climate · Lecture</figcaption>
+  </figure>
+</section>

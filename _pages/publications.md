@@ -2,9 +2,9 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Peer-reviewed publications in cloud microphysics and atmospheric science.
+description: Current manuscripts and peer-reviewed publications in cloud microphysics and atmospheric science.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 <!-- _pages/publications.md -->
@@ -15,12 +15,23 @@ nav_order: 3
 
 <div class="publications">
 
-<h2 class="pub-section">In Preparation and Under Review</h2>
-<div class="starred-bib">
-{% bibliography --group_by none --query @unpublished* %}
+<h2 class="pub-section">Current Manuscripts</h2>
+<div class="manuscript-status-list" aria-label="Current manuscript status">
+  <div class="manuscript-status-entry">
+    <span><strong>Lim and Feingold</strong> (2026)</span>
+    <span class="manuscript-status">Revised manuscript under review</span>
+  </div>
+  <div class="manuscript-status-entry">
+    <span><strong>Lim and Feingold</strong></span>
+    <span class="manuscript-status">In preparation</span>
+  </div>
+  <div class="manuscript-status-entry">
+    <span><strong>Lim et al.</strong></span>
+    <span class="manuscript-status">In preparation</span>
+  </div>
 </div>
 
-<h2 class="pub-section">Published</h2>
+<h2 class="pub-section">Peer-Reviewed Publications</h2>
 {% capture pub_count_raw %}{% bibliography_count --query @article* %}{% endcapture %}
 {% assign pub_start = pub_count_raw | strip | plus: 1 %}
 <div class="numbered-bib" style="--pub-start: {{ pub_start }};">
