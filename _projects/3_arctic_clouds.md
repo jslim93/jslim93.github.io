@@ -1,29 +1,41 @@
 ---
 layout: page
-title: Arctic Mixed-Phase Clouds
-description: Lagrangian modeling validated against MOSAiC observations
+title: Arctic Cloud States and Microphysics
+description: How cloud variability, phase changes, and particle histories shape Arctic winter
+summary: >
+  Arctic winter can alternate between strongly cooling clear conditions and heat-trapping liquid-bearing
+  clouds. My research connects that large-scale pattern to processes that happen much faster and much
+  smaller: liquid-water fluctuations, ice growth, and the trajectories of individual hydrometeors.
 img: Media/mixedphase.gif
-importance: 3
+importance: 1
 category: research
 related_publications: true
 ---
 
-Arctic mixed-phase clouds are persistent features of the polar atmosphere, containing both liquid droplets and ice crystals. These clouds play a critical role in the Arctic surface energy budget and are notoriously difficult to simulate correctly.
+<div class="research-detail" markdown="1">
 
-### Research Focus
+### Why does Arctic winter switch between radiative states?
 
-At CIRES, I work with Dr. Graham Feingold to investigate Arctic mixed-phase cloud stability using:
+I use long-term observations and stochastic dynamics to investigate how cloud variability maintains
+contrasting clear and cloudy states, and why atmospheric models often blur them into an unrealistic
+intermediate state.
 
-- **Lagrangian Cloud Model (LCM) simulations** that explicitly track individual hydrometeors
-- **MOSAiC observational data** from the year-long Arctic drift expedition
-- **Process-level analysis** of cloud-aerosol-radiation interactions
+</div>
 
-### Key Questions
+<div class="research-detail" markdown="1">
 
-- What controls the stability of Arctic mixed-phase clouds?
-- How do microphysical processes influence cloud longevity?
-- Can we improve climate model representations of polar clouds?
+### How does cloud physics interact with a changing Arctic climate?
 
-### Related Publications
+I investigate the two-way link between Arctic cloud microphysics and climate: how cloud processes
+shape Arctic climate regimes, and how climate change alters those processes in turn.
 
-- [Zhang, Painemal, Dror, Lim et al. (2025)](https://doi.org/10.5194/egusphere-2025-5119): Inferring processes governing cloud transition during mid-latitude marine cold-air outbreaks from satellite. _ACP (in review)_
+</div>
+
+<div class="research-detail" markdown="1">
+
+### How do particle histories shape mixed-phase clouds?
+
+I compare observations with particle-based and bulk models to understand how ice growth, transport,
+and cloud dynamics organize persistent mixed-phase clouds.
+
+</div>

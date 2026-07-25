@@ -1,11 +1,23 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 4
-cv_pdf: jslim_CV.pdf
+nav_order: 5
 description: Academic curriculum vitae of Dr. Jung-Sub Lim.
-toc:
-  sidebar: left
 ---
+
+<div class="cv-embed">
+  <div class="cv-embed-toolbar">
+    <p>Public academic CV</p>
+    <a href="{{ '/assets/pdf/jslim_CV.pdf' | relative_url }}" download>Download PDF</a>
+  </div>
+  <iframe
+    src="{{ '/assets/pdf/jslim_CV.pdf#view=FitH' | relative_url }}"
+    title="Jung-Sub Lim academic curriculum vitae"
+    loading="eager"
+  ></iframe>
+  <p class="cv-embed-fallback">
+    If the PDF viewer does not load, <a href="{{ '/assets/pdf/jslim_CV.pdf' | relative_url }}" download>download the CV</a>.
+  </p>
+</div>
