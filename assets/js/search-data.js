@@ -11,14 +11,21 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "My research spans cloud microphysics, from entrainment and mixing to warm rain initiation and Arctic cloud dynamics.",
+          description: "A scrollable view of my research program, from Arctic cloud states and climate intervention to particle-scale mixing and precipitation formation.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-droplab",
+          title: "DropLab",
+          description: "An open-source Lagrangian cloud laboratory—from warm-rain parcels to mixed-phase convection",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/droplab/";
+          },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications in cloud microphysics and atmospheric science.",
+          description: "Current manuscripts and peer-reviewed publications in cloud microphysics and atmospheric science.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -409,26 +416,29 @@ ninja.data = [{
           section: "News",},{id: "news-invited-talk-at-korea-institute-of-science-and-technology-seoul-from-particle-to-planet-what-cloud-droplets-tell-us-about-arctic-climate",
           title: 'Invited talk at Korea Institute of Science and Technology, Seoul: “From Particle to...',
           description: "",
+          section: "News",},{id: "news-released-droplab-an-open-source-lagrangian-cloud-laboratory-for-particle-based-cloud-experiments-climate-intervention-demonstrations-and-teaching",
+          title: 'Released DropLab, an open-source Lagrangian cloud laboratory for particle-based cloud experiments, climate-intervention demonstrations,...',
+          description: "",
           section: "News",},{id: "projects-entrainment-amp-mixing",
           title: 'Entrainment &amp;amp; Mixing',
-          description: "How turbulent mixing affects cloud droplet size distributions",
+          description: "How turbulent mixing reshapes cloud droplet populations",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_entrainment_mixing/";
             },},{id: "projects-warm-rain-initiation",
           title: 'Warm Rain Initiation',
-          description: "Role of giant aerosols and precipitation embryos",
+          description: "How precipitation embryos help clouds cross the size gap to rain",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_warm_rain/";
-            },},{id: "projects-arctic-mixed-phase-clouds",
-          title: 'Arctic Mixed-Phase Clouds',
-          description: "Lagrangian modeling validated against MOSAiC observations",
+            },},{id: "projects-arctic-cloud-states-and-microphysics",
+          title: 'Arctic Cloud States and Microphysics',
+          description: "How cloud variability, phase changes, and particle histories shape Arctic winter",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_arctic_clouds/";
-            },},{id: "projects-pylcm",
-          title: 'PyLCM',
-          description: "Open-source educational Lagrangian Cloud Model",
+            },},{id: "projects-climate-intervention",
+          title: 'Climate Intervention',
+          description: "Evaluating intervention outcomes across observed Arctic weather regimes",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_pylcm/";
+              window.location.href = "/projects/4_arctic_intervention/";
             },},{
         id: 'social-email',
         title: 'email',
