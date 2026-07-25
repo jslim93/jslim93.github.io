@@ -89,7 +89,7 @@ wide_page: true
           I am developing GPU-accelerated particle-based microphysics for the Lagrangian Cloud Model (LCM),
           coupled to the
           <a href="http://rossby.msrc.sunysb.edu/SAM.html" target="_blank" rel="noopener">System for Atmospheric Modeling (SAM)</a>,
-          using OpenACC on NVIDIA GPUs. Early end-to-end benchmarks show <strong>7–30× speedups</strong>
+          using OpenACC on NVIDIA GPUs. Ongoing end-to-end benchmarks show <strong>17–38× speedups</strong>
           across the cases tested so far; validation and performance benchmarking are ongoing.
         </p>
       </div>

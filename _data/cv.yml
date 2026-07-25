@@ -213,7 +213,7 @@
   type: list
   contents:
     - "<b>DropLab</b> — Creator and maintainer of an open-source Lagrangian cloud laboratory spanning warm-rain parcels, idealized 2-D warm and mixed-phase clouds, deep convection, and climate-intervention demonstrations. <a href='https://github.com/jslim93/DropLab'>github.com/jslim93/DropLab</a>"
-    - "<b>GPU-accelerated particle-based microphysics in LES</b> — Developing GPU-accelerated particle-based microphysics for the Lagrangian Cloud Model (LCM), coupled to the <a href='http://rossby.msrc.sunysb.edu/SAM.html'>System for Atmospheric Modeling (SAM)</a>, using OpenACC on NVIDIA H100 GPUs together with a physics-validation workflow. Current end-to-end benchmarks span roughly 7–30× across cases and scales; performance characterization and statistical validation are ongoing."
+    - "<b>GPU-accelerated particle-based microphysics in LES</b> — Developing GPU-accelerated particle-based microphysics for the Lagrangian Cloud Model (LCM), coupled to the <a href='http://rossby.msrc.sunysb.edu/SAM.html'>System for Atmospheric Modeling (SAM)</a>, using OpenACC on NVIDIA H100 GPUs together with a physics-validation workflow. Current end-to-end benchmarks span roughly 17–38× across cases and scales; performance characterization and statistical validation are ongoing."
 
 - title: Media & Press
   type: list
