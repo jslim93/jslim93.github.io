@@ -9,7 +9,7 @@ description: Academic curriculum vitae of Dr. Jung-Sub Lim.
 
 <div class="cv-embed">
   <div class="cv-embed-toolbar">
-    <p>Public academic CV</p>
+    <p>Last updated: August 14, 2026</p>
     <a href="{{ '/assets/pdf/jslim_CV.pdf' | relative_url }}" download>Download PDF</a>
   </div>
   <iframe
