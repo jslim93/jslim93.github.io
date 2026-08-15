@@ -18,10 +18,6 @@ nav_order: 4
 <h2 class="pub-section">Current Manuscripts</h2>
 <div class="manuscript-status-list" aria-label="Current manuscript status">
   <div class="manuscript-status-entry">
-    <span><strong>Lim and Feingold</strong> (2026)</span>
-    <span class="manuscript-status">Revised manuscript under review</span>
-  </div>
-  <div class="manuscript-status-entry">
     <span><strong>Lim and Feingold</strong></span>
     <span class="manuscript-status">In preparation</span>
   </div>
